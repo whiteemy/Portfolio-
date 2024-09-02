@@ -1,0 +1,276 @@
+/* Estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #00FF08;
+}
+
+/* estilo do cabeçalho */
+header{
+    padding: 40px 4%;
+    background-color: #000;
+}
+
+header > .interface{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+/* Para colocar os tópicos um do lado da outro */
+header nav ul li{ 
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo topo do site*/
+section.topo-do-site{
+    padding: 40px 4%;
+    background-color: #000;
+}
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90;
+}
+
+.topo-do-site h1{
+    color:#fff;
+    font-size: 30px;
+    line-height: 40px;
+
+}
+
+.topo-do-site h1 spam{
+    color:#00FF08;
+}
+
+.topo-do-site h2{
+    margin: 20px 0px;
+    color: #fff;
+    font-size: 40px;
+
+}
+
+.topo-do-site p{
+    color: #fff;
+    margin: 20px 0px;
+}
+
+.topo-do-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Para colocar animação na imagem */
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.topo-do-site img{
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+/* Estilo da formação */
+.formação .interface{
+    padding: 40px 4%;
+    background-color: #0a1600;
+}
+section.formação .flex{
+    gap: 60px;
+    background-color: #0a1600;
+}
+
+.formação .formação-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.formação .formação-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff78;
+}
+
+.formação .formação-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* SOBRE */
+section.sobre{
+    padding: 80px 4%;
+    background-color: #000;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00FF08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/*Estilo do projetos*/
+.projetos{
+    padding: 40px 4%;
+    background-color: #0a1600;
+}
+
+.projetos .img-projetos-box h3{
+    color: #fff;
+    font-size: 28px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.projetos img:hover{
+    transform: scale(1,01);
+    box-shadow: 0 0 10px #ffffff78;
+}
+
+.projetos img{
+    border-radius: 7%
+}
+
+/*Estilo do formulário*/
+section.formulário{
+    padding: 40px 4%;
+    background-color: #000;
+}
+
+.interface{
+    background-color: #000;
+}
+
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /*para colocar os elementos em coluna*/
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    padding: 10px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 200px;
+    background-color: #00FF08;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+ /*estilo roda pé*/
+ .rodapé{
+    padding: 20px 4%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+ }
+
+
+

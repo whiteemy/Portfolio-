@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--cógico google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Fim google fontes-->
+    <link rel="stylesheet" href="style.css">
+    <title>Meu potifólio</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#topo-do-site">
+                    <img src="./logo.jpeg" alt="Logo da Agência" height="60" width="60">
+                </a>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo-do-site">Inicio</a></li>
+                    <li><a href="#formação">Formação</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div><!--Btn-contato-->
+        </div><!--interface-->
+    </header>
+
+    <!--Conteúdo principal do site "usa o main"-->
+    <main>
+        <section class="topo-do-site" id="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site"> 
+                       <h1>Oi, meu nome é <spam>Emilly</spam></h1>
+                       <h2>Pesquisadora + Desenvolvedora</h2>
+                       <p>Sou biomédica de formação, mas estou explorando novas oportunidades no campo da programação. Estou animada para compartilhar com vocês meus projetos e experiências. Atualmente, estou envolvida em pesquisa básica, mas estou planejando uma transição para a área de desenvolvimento web. Estou ansiosa para mostrar o que tenho feito e aprender cada vez mais nessa nova jornada! </p>
+
+                       <div class="btn-contato">
+                        <a href="#contato">
+                            <button>Entre em contato</button>
+                        </a>
+                       </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="imag-topo-site">
+                        <img src="./foto de exposição 2.jpeg" alt="" height="400">
+                    </div><!--imag-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo do site-->
+        
+        <section class="formação" id="formação">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>FORMAÇÕES</span></h2>
+                <div class="flex">
+                    <div class="formação-box">
+                        <h3>Graduação</h3>
+                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                        <p>UNINTER<br> 2024/2026 </p>
+                    </div><!--formação-box-->
+
+                    <div class="formação-box">
+                        <h3>Mestrado</h3>
+                        <h4>Neurobiologia e Neurociências</h4>
+                        <p>UNIFESP <br> 2023/2025 </p>
+                    </div><!--formação-box-->
+
+                    <div class="formação-box">
+                        <h3>Graduação</h3>
+                        <h4>Biomedicina</h4>
+                        <p>Universidade Paulista- UNIP <br> 2019/2023 </p>
+                    </div><!--formação-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--formação-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="./foto de exposição.jpeg" alt="" height="350">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU EMILLY FIGUEIREDO.</span></h2>
+                        <P>Sou biomédica de formação e atualmente estou cursando mestrado em Neurociências na Universidade Federal de São Paulo. Meu projeto de pesquisa está focado em cultivo celular e bioimpressão 3D, com o objetivo de desenvolver um modelo que simule o Alzheimer esporádico.</P>
+                        <p>Durante a graduação, tive a oportunidade de participar de um intercâmbio de inglês em Liverpool, na Inglaterra, por um mês. Também realizei uma iniciação científica que investigou o impacto do exercício resistido (musculação) em animais com a mutação do Alzheimer.</p>
+                        <p>Atualmente, estou realizando uma transição de carreira para a área de desenvolvimento web, onde estou entusiasmada para explorar novas oportunidades e desafios.</p>
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="projetos" id="projetos">
+                <h2 class="titulo"> PROJETOS </h2>
+                <div class="flex">
+                    <div class="img-projetos-box">
+                        <h3>Artigo científico</h3>
+                        <img src="./artigo3.png" alt="" height="350">
+                        <a href="https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1131214/full"></a>
+                    </div><!--img-projetos-->
+                </div><!--flex-->
+        </section><!--projetos-->
+
+        <section class="formulário" id="contato">
+            <h2 class="titulo"> FALE <span> COMIGO </span></h2>
+            <div class="interface">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo" required>
+                    <input type="text" name="" id="" placeholder="Seu email:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulário--> 
+
+        <footer class="rodapé">
+            <p>&copy; 2024 Sobre Mim. Todos os direitos reservados.</p> 
+        </footer><!--rodapé-->
+    </main>
+
+</body>
+</html>
